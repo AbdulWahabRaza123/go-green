@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GoGreen</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css"
+        integrity="sha512-D1liES3uvDpPrgk7vXR/hR/sukGn7EtDWEyvpdLsyalQYq6v6YUsTUJmku7B4rcuQ21rf0UTksw2i/2Pdjbd3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- style sheet for the loader -->
+    <link rel="stylesheet" href="./assets/styles/loader.css">
+    <link rel="stylesheet" href="./assets/styles/generic.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div> -->
+
+
+    <!-- <div class = "centered loader-wrapper">
+        <div class = "blob-1"></div>
+        <div class = "blob-2"></div>
+      </div> -->
+
+    <div class="px-5 pt-md-2 b-white">
+        <div class="Header">
+            <!-- navbar  -->
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" style="margin-bottom: 5%;">
+                <div class="container-fluid px-md-5 d-flex justify-content-between mx-md-5">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="./assets/images/logo.png" alt="" width="30px" height="70px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="margin-left: auto;">
+                            <li class="nav-item mx-1 ">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-1 ">
+                                <a class="nav-link active" aria-current="page" href="./About.html">About</a>
+                            </li>
+
+
+                            <li class="nav-item dropdown mx-1">
+                                <a class="nav-link dropdown-toggle" href="./Renewable Energies.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Renewable Energies and Incorporations
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item" href="./solar.html">Solar
+                                            Energy</a></li>
+                                    <li><a class="dropdown-item" href="./wind.html">Wind Energy</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./hydroelectric.html">Hydroelectric Energy</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./geothermal.html">Geothermal
+                                            Energy</a></li>
+                                    <li><a class="dropdown-item" href="./biomass.html">Biomass
+                                            Energy</a></li>
+                                    <li><a class="dropdown-item" href="./biogas.html">Biogas
+                                            Energy</a></li>
+
+                                    <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                        </li>
+
+                        <li class="nav-item dropdown mx-1">
+                            <a class="nav-link dropdown-toggle" href="./costs.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Costs and Incentives
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./costs.html#keyEq"> Key Programs and Incentives </a>
+                                </li>
+                                <li><a class="dropdown-item" href="./costs.html#consumptionEq"> Consumption Tax Credits
+                                    </a></li>
+                                <li><a class="dropdown-item" href="./costs.html#combinedEq"> Combined Heat and Power
+                                        Partnership </a></li>
+                                <li><a class="dropdown-item" href="./costs.html#residentialEq"> Residential Clean Energy
+                                        Credit </a></li>
+                                <li><a class="dropdown-item" href="./costs.html#energyEq"> Energy Efficient Home
+                                        Improvement Credit </a>
+                                </li>
+
+                                <li><a class="dropdown-item" href="./costs.html#PA"> State Specific Incentives </a>
+                                </li>
+                                <li><a class="dropdown-item" href="./costs.html#help"> Summary </a>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <div class="banner">
+        <div class="background-gradient">
+            <video autoplay muted loop playsinline id="myVideo" poster="video poster.png">
+                <source src="bg vid.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="carousalSection">
+        <!-- Carousel starts here -->
+        <div class="carouselContainer rounded-4">
+            <!-- new one -->
+
+            <div id="carouselExampleCaptions" class="carousel slide rounded-3 carouselPadding">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./assets/images/solar1.jpg" class="d-block rounded-3" alt="...">
+                        <div class="carousel-caption ">
+
+                            <h1 data-aos="flip-up"><b>Solar Energy</b></h1>
+
+
+                            <p data-aos="flip-up">Did you know... "Solar energy is the most abundant energy resource on
+                                earth -- 173,000
+                                terawatts of solar energy strikes the Earth continuously. That's more than 10,000 times
+                                the world's total energy use."</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./assets/images/wind1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h1 data-aos="flip-up"><b>Wind Energy</b></h1>
+
+                            <p data-aos="flip-up">Did you know... "Today’s wind turbines are much more complicated
+                                machines than the
+                                traditional prairie windmill? A wind turbine has as many as 8,000 different components?"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active">
+                        <img src="./assets/images/hydro1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h1 data-aos="flip-up"><b>Hydroelectric Energy</b></h1>
+
+                            <p data-aos="flip-up">Did you know... "Hydropower is one of the oldest power sources on the
+                                planet, generating
+                                power when flowing water spins a wheel or turbine? It was used by farmers as far back as
+                                ancient Greece for mechanical tasks like grinding grain."</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/geothermal1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h1 data-aos="flip-up"><b>Geothermal Energy</b></h1>
+
+                            <p data-aos="flip-up">Did you know... "Geothermal power plants produce electricity
+                                consistently, running 24
+                                hours a day, 7 days a week?"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/biomass1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h1 data-aos="flip-up"><b>Biomass Energy</b></h1>
+
+                            <p data-aos="flip-up">Did you know... "Biomass can be used to produce renewable fuels,
+                                power, and everyday
+                                products like plastic?"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/biogas1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <h1 data-aos="flip-up"><b>Biogas energy</b></h1>
+
+                            <p data-aos="flip-up">Did you know... "One of the primary uses of biogas is for heating and
+                                cooking purposes?
+                                The combustible methane in biogas can be utilized in stoves, boilers, and even for
+                                generating heat in industrial processes."</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden ">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button> -->
+            </div>
+
+        </div>
+
+
+        <!-- Carousel ends here -->
+    </div>
+
+    <div class="gridContainer container section">
+
+        <div class="Aside1"></div>
+        <div class="Body">
+            <br>
+            <br>
+            <div class="textContainer text " data-aos="fade-up"
+                style="box-shadow: rgba(0, 0, 0, 0.586) 5px 5px 15px; background-color: rgba(201, 238, 182, 0.707); padding: 5%; border-radius: 10px;">
+                <p class="heading">
+                    The clock is ticking on our planet. Power your life with clean energy and become a hero for
+                    generations to come. GoGreen.
+                </p>
+                <p class="container_p">
+                    Unlock the limitless potential of green energy. Ignite a brighter tomorrow.
+
+                </p>
+                <a style="border-bottom: 1px solid red; font-size: 16px;" href="./About.html">Find out about us <i
+                        class="bi bi-arrow-right-circle-fill"></i></a>
+
+
+
+
+            </div>
+
+            <div data-aos="fade-up"
+                class="firstGrid section d-flex flex-row align-items-center justify-content-between flex-wrap"
+                style="box-shadow: rgba(0, 0, 0, 0.586) 5px 5px 15px; background-color: rgba(201, 238, 182, 0.707); margin-top: 10%; border-radius: 10px; margin-bottom: 0; padding: 5%;">
+                <div class="lightGreyBox">
+                    <h4 class="heading text-start">
+                        <span class="firstSpan heading">Choose Green and Save Our Future</span>
+                        <br>
+                        <br>
+                        <q class="color_third">
+                            Breathe easier, sleep sounder, knowing you're powering your home with clean, renewable
+                            energy that saves money and protects the planet.
+                        </q>
+                        <br>
+                        <br>
+                        <span class="secondSpan heading"> - GoGreen </span>
+                    </h4>
+                </div>
+                <div class="firstGridImageContainer">
+                    <img src="./assets/images/homepage1.jpg" alt="" class="rounded-4 object-cover">
+                </div>
+            </div>
+
+
+
+
+            <div class="section" data-aos="fade-up"
+                style="box-shadow: rgba(0, 0, 0, 0.586) 5px 5px 15px; background-color: rgba(201, 238, 182, 0.707); margin-top: 10%; border-radius: 10px; margin-bottom: 0; padding: 5%;">
+                <h2 class="differentEnergiesH heading mb-5">Different Types of Energies</h2>
+                <br />
+                <div class="differentEnergiesGrid">
+                    <div class="energy1" data-aos="zoom-out">
+                        <a class="section_a" href="./Renewable Energies.html#solarEnergy">
+                            <img src="./assets/images/solar2.jpg" alt="" class="object-cover"> </a>
+                        <p class="mt-2" style="font-weight: 700;">Solar Energy</p>
+                    </div>
+                    <div class="energy2" data-aos="zoom-in">
+                        <a class="section_a" href="./Renewable Energies.html#wind">
+                            <img src="./assets/images/wind2.jpg" alt="" class="object-cover"></a>
+                        <p class="mt-2" style="font-weight: 700;">Wind Energy</p>
+
+                    </div>
+                    <div class="energy3" data-aos="zoom-out">
+                        <a class="section_a" href="./Renewable Energies.html#hydroPower">
+                            <img src="./assets/images/hydro2.jpg" alt="" class="object-cover"></a>
+                        <p class="mt-2" style="font-weight: 700;">Hydroelectric Energy</p>
+
+                    </div>
+                    <div class="energy4" data-aos="zoom-in">
+                        <a class="section_a" href="./Renewable Energies.html#geoThermal">
+                            <img src="./assets/images/geothermal2.jpg" alt="" class="object-cover"></a>
+                        <p class="mt-2" style="font-weight: 700;">Geothermal Energy</p>
+
+                    </div>
+                    <div class="energy5" data-aos="zoom-out">
+                        <a class="section_a" href="./Renewable Energies.html#biomassEnergy">
+                            <img src="./assets/images/biomass2.jpg" alt="" class="object-cover"></a>
+                        <p class="mt-2" style="font-weight: 700;">Biomass Energy</p>
+
+                    </div>
+                    <div class="energy6" data-aos="zoom-in">
+                        <a class="section_a" href="./Renewable Energies.html#biogasEnergy">
+                            <img src="./assets/images/biogas2.jpg" alt="" class="object-cover"></a>
+                        <p class="mt-2" style="font-weight: 700;">Biogas Energy</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondGrid extraGrid"
+                style="box-shadow: rgba(0, 0, 0, 0.586) 5px 5px 15px; background-color: rgba(201, 238, 182, 0.707); border-radius: 10px; margin-top: 10%; margin-bottom: 0; padding: 5%;">
+                <div class="lightGreyBox text-start" data-aos="fade-up">
+                    <h2>
+                        <span class="firstSpan">Green Energy,</span>
+                        <br>
+                        <span class="secondSpan"> acknowledge it.</span>
+
+                    </h2>
+                    <q>
+                        Let hope to bloom brighter than ever before. Join hands with GoGreen and cultivate a legacy of a
+                        flourishing planet.
+
+                    </q>
+                    <br>
+                    <br>
+                    <br>
+                    <h3> Learn about the Costs and Incentives of these equipments! </h3>
+                    <br>
+                    <div id="greenBoxTexts" class="boxes">
+                        <div class="box" data-aos="zoom-in"><a href="./costs.html#solarEq">Solar PV and Hot Water
+                                Systems</a> </div>
+                        <div class="box" data-aos="zoom-out"><a href="./costs.html#windEq">Wind Turbines</a></div>
+                        <div class="box" data-aos="zoom-out-up"><a href="./costs.html#geothermalEq">Geothermal Heat
+                                Pumps</a></div>
+                        <div class="box" data-aos="zoom-out" data-aos-duration="3000"><a
+                                href="./costs.html#biomassEq">Biomass</a></div>
+                        <div class="box" data-aos="zoom-in" data-aos-duration="3000"><a
+                                href="./costs.html#biogasEq">Biogas</a></div>
+                        <div class="box" data-aos="zoom-out" data-aos-duration="3000"><a
+                                href="./costs.html#hydropowerEq">Hydropower</a></div>
+                        <div class="box" data-aos="zoom-out-up" data-aos-duration="3000"><a
+                                href="./costs.html#keyEq">Key Programs and
+                                Incentives</a></div>
+                        <div class="box" data-aos="zoom-out" data-aos-duration="3000"><a
+                                href="./costs.html#consumptionEq">Consumption Tax
+                                Credits</a></div>
+                        <div class="box" data-aos="zoom-out" data-aos-duration="3000"><a
+                                href="./costs.html#combinedEq">Combined Heat and Power
+                                Partnership</a></div>
+                        <div class="box" data-aos="zoom-out" data-aos-duration="3000"><a
+                                href="./costs.html#residentialEq">Residential Clean
+                                Energy Credit</a></div>
+                        <div class="box" data-aos="zoom-in" data-aos-duration="3000"><a
+                                href="./costs.html#energyEq">Energy Efficient Home
+                                Improvement Credit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gridImageContainer clearfix" id="bigTreeImg">
+                    <img src="./assets/images/homepage3.jpg" class="object-cover rounded-5"
+                        style="display: flex; height: 80%; width: 100%;" alt="">
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="container "
+                style="box-shadow: rgba(0, 0, 0, 0.586) 5px 5px 15px; background-color: rgba(201, 238, 182, 0.707); border-radius: 10px; margin-top: 10%; margin-bottom: 0; padding: 5%;">
+                <br>
+
+                <div>
+                    <div class="d-sm-flex d-block section" data-aos="fade-right">
+                        <h2 class="m-auto" style="text-align: center;">
+                            <span class="heading">Advantages and Disadvantages</span>
+                            <br>
+                            <p style="font-size: 20px; color: darkgreen;">of renewable energy</p>
+
+                            <span class="heading1">Things to Consider</span>
+                        </h2>
+                        <div class="firstGridImageContainer mt-4 md:mt-0" style="text-align: center;">
+                            <img src="./assets/images/adv.jpg" alt=""
+                                style="width: 100%; margin: auto; padding: 5%;border-radius: 14px;"
+                                class="object-cover">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <hr style="color: rgb(29, 76, 38); height: 10px;">
+                    <br>
+                    <div class="d-sm-flex d-block section flex-sm-row-reverse" data-aos="fade-left">
+                        <div class="m-auto" style="text-align: left;">
+                            <h2 class="heading1 heading" style="text-align: center;"> Advantages: </h2>
+                            <br>
+                            <h2 class="heading1" style="text-align: left;">
+                                <ul class="adv">
+                                    <li>Never runs out</li>
+                                    <li>Very reliable: trade laws, political instabilities, and territorial claims
+                                        do not
+                                        impact the
+                                        use of renewable energy</li>
+                                    <li>Environmentally friendly - minimal carbon and greenhouse gas emissions compared
+                                        to
+                                        fossil
+                                        fuels</li>
+                                    <li>Improves public health</li>
+                                    <li>Creates jobs</li>
+                                    <li>Less maintenance cost compared to fossil fuels</li>
+                                    <li>Reduces the ups and downs of energy prices; it does not depend on fuel prices
+                                    </li>
+                                </ul>
+                            </h2>
+                            <br>
+                            <h2 class="heading1 heading" style="text-align: center;">
+                                Disadvantages:
+                            </h2>
+
+                            <br>
+
+                            <h2 class="heading1">
+                                <ul class="adv">
+                                    <li>Not available round the clock and depends on weather conditions</li>
+                                    <li>Low efficiency compared to fossil fuels</li>
+                                    <li>High initial cost</li>
+                                    <li>Requires a lot of space</li>
+                                    <li>Renewable energy devices need recycling, e.g., solar cells</li>
+                                </ul>
+                            </h2>
+                        </div>
+
+                        <div class="firstGridImageContainer" style="text-align: center;">
+                            <img src="./assets/images/dis.jpg" style="width: 100%; padding: 5%; border-radius: 14px;"
+                                class="object-cover">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="Aside2"></div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+    <div class="Footer w-100" style="color: white;">
+        <footer class=" bg-secondary w-100 h-100">
+            <!-- Grid container -->
+            <div class=" p-4 pb-0">
+                <!-- Section: Links -->
+                <section class=" ">
+                    <!--Grid row-->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Go Green
+                            </h6>
+                            <p>
+                                Our team is made up of passionate green enthusiasts and we're here to guide you
+                                every
+                                step of the way, because a greener future starts at home. Join our community of
+                                passionate homeowners making mindful choices for their families and the planet.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Useful links
+                            </h6>
+
+                            <p>
+                                <a class="text-white" href="./index.html">Home</a>
+                            </p>
+                            <p>
+                                <a class="text-white" href="./About.html">About</a>
+                            </p>
+
+                        </div>
+
+                        <!-- Grid column -->
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i>USA,
+                                Pennslvania</p>
+                            <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:greenenergy@gmail.com"
+                                    style="color: white;">greenenergy@gmail.com</a></p>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWDSFlVzFSmz0sDrLXGUGzF-26iI4e9ci_Bc7S1BeMeWGfqg/viewform"
+                                class="text-white text-decoration-none fw-semibold"><i class="bi bi-question"></i>
+                                Feedback Form</a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+
+
+
+                <!-- Section: Copyright -->
+
+                <!-- Section: Copyright -->
+            </div>
+
+            <div class=" w-100 text-center bg-dark text-white mt-0 p-5">
+                <p class="mb-0 fw-bold">2024 © GoGreen, All Rights Reserved</p>
+            </div>
+
+
+
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+
+    <script src="./assets/scripts/calculator.js"></script>
+
+    <!-- Script for the loader -->
+    <script src="./assets/scripts/loader.js"></script>
+</body>
+
+</html>

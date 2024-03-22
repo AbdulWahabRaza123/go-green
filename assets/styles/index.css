@@ -1,0 +1,119 @@
+/* styles.css */
+
+:root {
+  --primary-color: #4f6f52;
+  --secondary-color: #739072;
+  --third-color: #86a789;
+  --font-family: "Montserrat", sans-serif;
+  /* Add more global variables here */
+}
+
+body {
+  font-family: var(--font-family);
+
+  background-image: url('./assets/images/heart.gif');
+  background-size: contain;
+  background-repeat: repeat;
+  overflow-x: hidden !important;
+  
+}
+
+/* Add more global styles here */
+.nav-link {
+  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+  font-size: 16px;
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--third-color);
+}
+.carouselContainer {
+  height: fit-content;
+  margin-bottom: 90px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 2rem !important;
+  color: var(--primary-color);
+  /* text-align: center; */
+}
+
+.heading_1 {
+  font-weight: 800;
+  font-size: 3rem !important;
+  color: var(--primary-color);
+  text-align: center;
+  
+}
+
+.container_p {
+  color: black;
+  font-size: large;
+  font-weight: 500;
+}
+
+.color_third {
+  columns: var(--third-color) !important;
+}
+.section_a {
+  font-size: 15px !important;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px !important;
+  padding:10px;
+}
+.energy {
+  width: 300px;
+  height: 100px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  /* background-color: #cfe59f !important; */
+}
+
+
+.calcContainer{
+ 
+  width: 70%;
+  height: 300px;
+  margin: auto;
+
+  background-color: rgb(103, 212, 81);
+  color: white;
+  padding-top: 40px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  font-size: 22px;
+  padding: 16px;
+}
+
+
+
+/* CSS */
+.button-70 {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat,sans-serif;
+  font-size: .9em;
+  margin: 5px;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.adv li{
+  margin-bottom: 12px;
+  text-align: left;
+  font-size: 17px;
+  font-weight: lighter;
+  color: rgb(34, 90, 37);
+
+}
