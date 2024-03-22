@@ -392,11 +392,31 @@ h4, h2{
   border-radius: 50%;
   box-shadow: 1px 1px 11px 1px black;
 }
-
+.wrap-resp {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 30px !important;
+}
 @media only screen and (min-width: 200px) and (max-width: 700px) {
   .Aside2 {
     display: none;
   }
+    .wrap-resp {
+      padding-top:15vh !important;
+
+      text-align: start;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: start !important;
+      justify-content: start !important;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+        .wrap-resp h2{
+          text-align: start;
+        }
   .textContainer * {
     text-align: left;
   }
