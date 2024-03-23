@@ -1,18 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // show the loader
-
+  // Initialize AOS with a longer duration to ensure animations complete before hiding loader
   AOS.init({
     duration: 2000,
   });
 
-  document.querySelector(".loader-wrapper").style.display = "flex";
+  // Show the loader
+  document.querySelector(".my-loader").style.display = "flex";
 
-  // hide the loader after 3 seconds
-
+  // Hide the loader after AOS animations are complete
   setTimeout(function () {
-    document.querySelector(".loader-wrapper").style.display = "none";
-  }, 2000);
+    document.querySelector(".my-loader").style.display = "none";
+  }, 2500); // Adjust timing as needed based on AOS duration
 });
+
 function removeAOSOnMobile() {
   if (window.innerWidth <= 768) {
     // Adjust the width condition as needed for your specific case
