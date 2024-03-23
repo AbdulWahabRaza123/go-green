@@ -5,9 +5,9 @@
   /* overflow-x: hidden !important; */
 }
 
-body{
-  width:100vw !important;
-  height:100vh;
+body {
+  width: 100vw !important;
+  height: 100vh;
 }
 h2 {
   font-size: 24px !important;
@@ -17,7 +17,7 @@ h2 {
   width: 100%;
   height: 100%;
 }
-.object-cover{
+.object-cover {
   object-fit: cover !important;
 }
 .gridContainer {
@@ -34,11 +34,12 @@ h2 {
   text-align: center;
 }
 
-h4, h2{
+h4,
+h2 {
   padding-left: 26px;
 }
 
-.calcContainer{
+.calcContainer {
   /* margin-left: 26px; */
   text-align: center;
 }
@@ -50,9 +51,7 @@ h4, h2{
 }
 
 .Header nav {
- 
   width: 100vw;
- 
 }
 
 .Aside1 {
@@ -76,8 +75,8 @@ h4, h2{
 
   padding-bottom: 300px;
 }
-.carouselPadding{
-  padding:5%;
+.carouselPadding {
+  padding: 5%;
 }
 /*styling for the body starts here*/
 .carouselContainer {
@@ -99,12 +98,11 @@ h4, h2{
   background-color: #0000005b;
   border-radius: 10px;
   padding: 20px;
-  height:250px;
- display: flex !important;
- flex-direction: column !important;
- align-items: center !important;
- justify-content: center !important;
-
+  height: 250px;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .banner {
@@ -128,7 +126,7 @@ h4, h2{
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: -1; 
+  z-index: -1;
 }
 .textContainer {
   width: 80%;
@@ -161,7 +159,7 @@ h4, h2{
 
 .lightGreyBox {
   /* background-color: #cfe59f; */
-  
+
   text-align: justify;
 }
 
@@ -204,11 +202,10 @@ h4, h2{
   color: rgb(3, 84, 3);
 }
 
-h4, h2{
+h4,
+h2 {
   padding-left: 26px;
 }
-
-
 
 .imageContainer {
   width: 600px;
@@ -235,7 +232,7 @@ h4, h2{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap:30px;
+  gap: 30px;
   flex-wrap: wrap;
   color: rgb(25, 56, 34);
   /* padding-bottom: 100px; */
@@ -248,7 +245,6 @@ h4, h2{
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 
 .differentEnergiesGrid a {
   text-decoration: none;
@@ -293,7 +289,7 @@ h4, h2{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap:10px;
+  gap: 10px;
 }
 
 .secondGrid a {
@@ -308,8 +304,8 @@ h4, h2{
   justify-content: center;
   list-style: none;
   background-color: rgb(103, 212, 81);
-  width:170px;
-  height:100px;
+  width: 170px;
+  height: 100px;
   padding: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -326,7 +322,7 @@ h4, h2{
 
 /* .secondGrid .box:hover {
   background-color: rgb(211, 221, 210);
-  color: white;
+  color: white;;
   padding: 13px 25px;
   border-radius: 8px;
   transition-duration: 1s;
@@ -339,7 +335,7 @@ h4, h2{
   display: table;
 }
 
-.heading1{
+.heading1 {
   /* padding: 0 150px; */
   width: 80%;
   margin: auto;
@@ -403,29 +399,29 @@ h4, h2{
   .Aside2 {
     display: none;
   }
-    .wrap-resp {
-      padding-top:15vh !important;
+  .wrap-resp {
+    padding-top: 15vh !important;
 
-      text-align: start;
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: start !important;
-      justify-content: start !important;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-        .wrap-resp h2{
-          text-align: start;
-        }
+    text-align: start;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: start !important;
+    justify-content: start !important;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .wrap-resp h2 {
+    text-align: start;
+  }
   .textContainer * {
     text-align: left;
   }
   .textContainer h2 {
     text-align: left;
   }
-    .carouselPadding {
-      padding: 0%;
-    }
+  .carouselPadding {
+    padding: 0%;
+  }
   .carouselContainer {
     width: 100%;
     height: 100vh;
@@ -435,18 +431,18 @@ h4, h2{
     height: 100vh;
     width: 100vw;
   }
-  .carousel-item{
-display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: center !important;
+  .carousel-item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
     height: 100vh;
   }
-    .carousel-caption{
-      width:100%;
-      height:100vh;
-     margin-left:-15vw;
-    }
+  .carousel-caption {
+    width: 100%;
+    height: 100vh;
+    margin-left: -15vw;
+  }
 
   .textContainer {
     width: 80%;
@@ -465,10 +461,9 @@ display: flex !important;
   /* .differentEnergiesGrid {
     grid-template-columns: repeat(1, 1fr);
   } */
-  .lightGreyBox{
+  .lightGreyBox {
     width: 100%;
   }
-
 
   .secondGrid {
     grid-template-columns: 1fr;
@@ -478,9 +473,8 @@ display: flex !important;
   }
 
   .secondGrid .box {
-   width:100% !important;
+    width: 100% !important;
   }
-
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1250px) {
@@ -522,14 +516,14 @@ display: flex !important;
   } */
 
   .secondGrid .box {
-    width:100% !important;
+    width: 100% !important;
   }
 
   .firstGridImageContainer {
     /* padding: 10px; */
     border-radius: 12px;
   }
-  .gridImageContainer{
+  .gridImageContainer {
     padding-bottom: 100px;
     padding-right: 0px;
     border-radius: 12px;

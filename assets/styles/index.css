@@ -11,11 +11,10 @@
 body {
   font-family: var(--font-family);
 
-  background-image: url('./assets/images/heart.gif');
+  background-image: url("./assets/images/heart.gif");
   background-size: contain;
   background-repeat: repeat;
   overflow-x: hidden !important;
-  
 }
 
 /* Add more global styles here */
@@ -43,7 +42,6 @@ body {
   font-size: 3rem !important;
   color: var(--primary-color);
   text-align: center;
-  
 }
 
 .container_p {
@@ -60,7 +58,7 @@ body {
   font-weight: 700;
   color: var(--primary-color);
   margin-bottom: 20px !important;
-  padding:10px;
+  padding: 10px;
 }
 .energy {
   width: 300px;
@@ -72,9 +70,7 @@ body {
   /* background-color: #cfe59f !important; */
 }
 
-
-.calcContainer{
- 
+.calcContainer {
   width: 70%;
   height: 300px;
   margin: auto;
@@ -88,19 +84,17 @@ body {
   padding: 16px;
 }
 
-
-
 /* CSS */
 .button-70 {
   background-image: linear-gradient(#0dccea, #0d70ea);
   border: 0;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  font-family: Montserrat,sans-serif;
-  font-size: .9em;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.9em;
   margin: 5px;
   padding: 10px 15px;
   text-align: center;
@@ -109,11 +103,10 @@ body {
   touch-action: manipulation;
 }
 
-.adv li{
+.adv li {
   margin-bottom: 12px;
   text-align: left;
   font-size: 17px;
   font-weight: lighter;
   color: rgb(34, 90, 37);
-
 }
