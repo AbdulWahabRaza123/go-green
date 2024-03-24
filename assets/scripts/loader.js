@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hide the loader after AOS animations are complete
   setTimeout(function () {
     document.querySelector(".my-loader").style.display = "none";
-  }, 2500); // Adjust timing as needed based on AOS duration
+  }, 1500); // Adjust timing as needed based on AOS duration
 });
 
 function removeAOSOnMobile() {
