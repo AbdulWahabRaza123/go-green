@@ -11,6 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector(".my-loader").style.display = "none";
   }, 1500); // Adjust timing as needed based on AOS duration
+
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // Add click event listener to the button
+  scrollToTopBtn.addEventListener("click", function () {
+    // Scroll the page to the top with smooth behavior
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
 
 function removeAOSOnMobile() {
