@@ -399,10 +399,10 @@ h2 {
 .energy1:hover,.energy2:hover,.energy3:hover,.energy4:hover,.energy5:hover,.energy6:hover{
   scale:1.1;
 transition:scale 0.5s ease;
- 
-/* transform:scale(1.1); */
-/* transition: 0.3s ease; */
-/* transition: background-color 0.3s ease; */
+}
+.box:hover{
+  scale: 1.1;
+    transition: scale 0.5s ease;
 }
 @media only screen and (min-width: 200px) and (max-width: 700px) {
   .Aside2 {
