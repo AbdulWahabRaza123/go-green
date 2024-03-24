@@ -64,7 +64,7 @@
 .blob-2 {
   left: 80%;
   animation: osc-r 2.5s ease infinite;
-  background: #0ff;
+  background: rgb(15, 236, 107);
 }
 @keyframes osc-l {
   0% {
