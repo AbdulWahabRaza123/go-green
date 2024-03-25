@@ -81,7 +81,6 @@ h2 {
 /*styling for the body starts here*/
 .carouselContainer {
   width: 100%;
-  /* margin: auto; */
   height: 80vh;
   margin-top: 30px;
   margin-bottom: 200px;
@@ -432,6 +431,7 @@ transition:scale 0.5s ease;
     padding: 0%;
   }
   .carouselContainer {
+    margin: auto;
     width: 100%;
     height: 100vh;
   }

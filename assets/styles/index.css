@@ -26,10 +26,10 @@ body {
 .nav-link:hover {
   border-bottom: 2px solid var(--third-color);
 }
-.carouselContainer {
+/* .carouselContainer {
   height: fit-content;
   margin-bottom: 90px;
-}
+} */
 .heading {
   font-weight: 700;
   font-size: 2rem !important;
