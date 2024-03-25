@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Show the loader
   document.querySelector(".my-loader").style.display = "flex";
+  document.querySelector(".my-loader-body").style.display = "none";
 
   // Hide the loader after AOS animations are complete
   setTimeout(function () {
     document.querySelector(".my-loader").style.display = "none";
+    document.querySelector(".my-loader-body").style.display = "block";
   }, 1500); // Adjust timing as needed based on AOS duration
 
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
