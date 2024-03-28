@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize AOS with a longer duration to ensure animations complete before hiding loader
   AOS.init({
-    duration: 2000,
+    duration: 1500,
   });
   // Show the loader
   document.querySelector(".my-loader").style.display = "flex";
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     document.querySelector(".my-loader").style.display = "none";
     document.querySelector(".my-loader-body").style.display = "block";
-  }, 1500); // Adjust timing as needed based on AOS duration
+  }, 1000); // Adjust timing as needed based on AOS duration
 
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -31,18 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
       elements.forEach(function (element) {
         element.removeAttribute("data-aos");
       });
-      const mobSlider = document.querySelector(".mobile-carousel");
-      console.log("This is mob carousel ", mobSlider);
-      mobSlider.style.display = "block";
-      const slider = document.querySelector(".pc-carousel");
-      slider.style.display = "none";
-      console.log("This is desk carousel ", slider);
+      // const mobSlider = document.querySelector(".mobile-carousel");
+      // console.log("This is mob carousel ", mobSlider);
+      // mobSlider.style.display = "block";
+      // const slider = document.querySelector(".pc-carousel");
+      // slider.style.display = "none";
+      // console.log("This is desk carousel ", slider);
     } else {
-      const mobSlider = document.querySelector(".mobile-carousel");
-      mobSlider.style.display = "none";
-      // mobSlider.style.position = "absolute";
-      const slider = document.querySelector(".pc-carousel");
-      slider.style.display = "block";
+      // const mobSlider = document.querySelector(".mobile-carousel");
+      // mobSlider.style.display = "none";
+      // // mobSlider.style.position = "absolute";
+      // const slider = document.querySelector(".pc-carousel");
+      // slider.style.display = "block";
     }
   }
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-const delay = 3000; //ms
+const delay = 4000; //ms
 
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;

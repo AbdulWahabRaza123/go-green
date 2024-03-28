@@ -1,10 +1,19 @@
+.mobile-carousel{
+    margin-top: 10vh;
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .mob-carousel {
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 90vh;
     border-radius: 3px;
+   
     overflow: hidden;
     position: relative;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    
 }
 .mob-carousel:hover .controls {
         opacity: 1;
@@ -46,6 +55,7 @@
         left: 0;
         transform: translateY(-50%);
         display: flex;
+       text-align: center;
         width: 100%;
         transition: 1s ease-in-out all;
 }
@@ -53,4 +63,29 @@
     min-width: 100%;
     min-height: 100vh;
     height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mob-carousel .slides .slide .content{
+    top:50%;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 700px) {
+    .mob-carousel{
+        width: 100vw;
+        height: 100vh;
+    }
+    .mob-carousel .slides .slide .content{
+        top:30%;
+    }
 }
