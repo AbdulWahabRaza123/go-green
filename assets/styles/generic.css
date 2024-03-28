@@ -47,6 +47,8 @@ h2 {
 .Header {
   text-align: center;
   color: cornflowerblue;
+  padding-left:20px;
+  padding-right: 20px;
   /* grid-column: 1/4; */
 }
 
