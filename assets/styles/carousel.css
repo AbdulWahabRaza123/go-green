@@ -68,6 +68,10 @@ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+.mob-carousel .slides .slide img{
+    object-fit: cover;
 }
 .mob-carousel .slides .slide .content{
     top:50%;
@@ -79,8 +83,16 @@ display: flex;
     justify-content: center;
     text-align: center;
 }
-
+.windmil-image {
+    object-fit: contain !important;
+    max-width: 100%;
+    max-height: 100%;
+object-position: center;
+}
 @media only screen and (min-width: 200px) and (max-width: 700px) {
+    .windmil-image{
+        object-fit: cover !important;
+    }
     .mobile-carousel {
         margin-top: 10vh;
     }
