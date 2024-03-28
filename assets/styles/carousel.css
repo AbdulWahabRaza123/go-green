@@ -1,5 +1,5 @@
 .mobile-carousel{
-    margin-top: 10vh;
+    margin-top: 17vh;
 display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,7 +7,7 @@ display: flex;
 }
 .mob-carousel {
     width: 90vw;
-    height: 90vh;
+    height: 81vh;
     border-radius: 3px;
    
     overflow: hidden;
@@ -51,7 +51,7 @@ display: flex;
  }
 .mob-carousel .slides {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 0;
         transform: translateY(-50%);
         display: flex;
@@ -81,11 +81,14 @@ display: flex;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 700px) {
+    .mobile-carousel {
+        margin-top: 10vh;
+    }
     .mob-carousel{
         width: 100vw;
         height: 100vh;
     }
     .mob-carousel .slides .slide .content{
-        top:30%;
+        top:40%;
     }
 }

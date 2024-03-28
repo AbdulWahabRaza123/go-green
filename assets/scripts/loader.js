@@ -8,9 +8,23 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".my-loader-body").style.display = "none";
 
   // Hide the loader after AOS animations are complete
+  function scrollToHash() {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        const offsetTop = target.offsetTop;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        });
+      }
+    }
+  }
   setTimeout(function () {
     document.querySelector(".my-loader").style.display = "none";
     document.querySelector(".my-loader-body").style.display = "block";
+    scrollToHash();
   }, 1000); // Adjust timing as needed based on AOS duration
 
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
