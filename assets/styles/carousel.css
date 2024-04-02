@@ -28,8 +28,6 @@ display: flex;
         width: 100%;
         z-index: 99999;
         transition: all ease 0.5s;
-
-       
 }
  .mob-carousel .controls .control {
      margin: 0 5px;
@@ -43,8 +41,6 @@ display: flex;
      opacity: .5;
      transition: ease .3s;
      cursor: pointer;
-
-     
  }
   .mob-carousel .controls .control:hover {
      opacity: 1;
